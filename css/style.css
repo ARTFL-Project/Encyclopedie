@@ -1,0 +1,757 @@
+/* Get the footer to stick at the bottom */
+s {
+  text-decoration: none;
+}
+#container {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+#wrapper {
+    padding-bottom: 100px;
+}
+#footer {
+    bottom: 0 !important;
+    bottom: -1px;
+    position: absolute;
+    width: 100%;
+}
+html, body {
+    margin:0;
+    padding: 0;
+    height:100%;
+}
+
+/* The following is for the header and footer */
+#header {
+  background: url(images/header_pattern.png);
+  height: 75px;
+  box-shadow: 0px 8px 15px -5px #C8C8C8;
+}
+#footer {
+    background-image: url(images/footer_pattern.png);
+    height: 75px;
+    box-shadow: 0px -8px 15px -5px #C8C8C8;
+}
+
+.secondary-links {
+    margin:0;
+    padding:0;
+    float:right;
+    height: 10px;
+}
+.secondary-links li {
+    display: inline;
+    font-size: 70%;
+}
+#header .region-content, #footer .region-content {
+  min-width: 725px;
+  padding-left:20px;
+  padding-right: 20px;
+}
+.site-name {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+#header h1 {
+  font-size: 2.5em;
+  color: #800000;
+}
+#header h1 a:link, #header h1 a:visited, #header h1 a:hover {
+ color: #800000;
+}
+#header h1 a:hover, #header h1 a:active {
+ text-decoration: none; color: #999999;
+}
+#header h1 .site-slogan {
+ font-size: .4em;
+ font-style: italic;
+}
+#footer ul.primary-links li a, #footer ul.primary-links li a:link
+, #footer ul.primary-links li a:visited {
+  color: #800000;
+}
+
+#footer ul.primary-links li {
+  border-left: 1px solid #800000;
+  padding: 0 .5em 0 .75em;
+}
+
+#footer ul.primary-links li.first {
+  border: 0;
+  padding-left: 0;
+}
+#footer #footer-message {
+    color: #800000;
+    font-size: .9em;
+    margin: 0 0 0 2em;
+    float: right;
+}
+#footer .block {
+    clear: both;
+    margin-bottom: 1.3em;
+}
+#footer .bottom-border {
+    min-height: 20px;
+    padding: 22px 2em;
+}
+#footer .primary-links {
+  float: left;
+}
+.footer-nav {
+  font-size: 80%;
+}
+
+/* Links */
+a:link, a:visited {
+  color: #800000;
+  text-decoration: none;
+  font-weight: 700 !important;
+}
+a:hover {
+  color: #800000;
+  text-decoration: underline;
+}
+a.active, a:link.active, a:visited.active, a:hover.active {
+  color: #800000;
+}
+
+/* Fonts */
+body {
+  font-family: 'Averia Serif Libre', cursive;
+}
+.main_body{
+    font-weight:300;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+table {
+  font-size:inherit;
+  font-weight: inherit;
+}
+
+.site-name {
+    font-weight: 400 !important;
+}
+
+input[type=text] {
+    height: 20px;
+    font-size: 100%;
+    padding-left: .4em;
+    transition: background-color 200ms ease;
+    -webkit-transition: background-color 200ms ease;
+    -ms-transition: background-color 200ms ease;
+}
+input[type=text]:focus {
+    background-color: #F2F9FF;
+}
+
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  color: #555;
+  line-height: 1.2em;
+}
+h3 {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: 400 !important;
+    text-decoration: underline;
+}
+ol {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+div.main_body {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left:30px;
+    margin-right: 30px;
+}
+
+.small-caps {
+    font-variant:small-caps;
+}
+
+/* For pop-in notes */
+.hiddennote {
+        display: none;
+        margin: 5px;
+        border: 1px solid #242e55;
+        background-color: #dde3ef;
+        padding: 2px;
+}
+
+
+
+/*Results formatting*/
+.philologic_response {
+    margin-top: 60px;
+}
+.initial_report {
+    border-style:solid;
+    border-width:1px;
+    border-color: #A0A0A0;
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+}
+.kwic_concordance {
+        font-family: 'Droid Sans Mono', sans-serif;
+        font-size: 13px;
+        border-bottom-style:solid;
+        border-bottom-width:1px;
+        border-bottom-color: #CCCCCC;
+        padding-top:7px;
+        padding-bottom:8px;
+        margin-right: 20px;
+}
+.kwic_line {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.kwic_biblio {
+    font-weight:400 !important;
+}
+.philologic_concordance, .colloc_concordance {
+        list-style-type: none;
+}
+.philologic_occurrence {
+        padding-top: 8px;
+        padding-bottom : 8px;
+        border-bottom-style:solid;
+        border-bottom-width:1px;
+        border-bottom-color: #A0A0A0;
+        overflow: hidden;
+}
+.philologic_context {
+    text-align: justify;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    /*background-color: #FCFCFC;*/
+}
+.word_cloud {
+    float: right;
+    width:400px !important;
+    height: auto;
+}
+.collocation_counts {
+    padding: 5px 10px 10px 10px;
+    display:none;
+    text-align: justify;
+    line-height: 200%;
+}
+.cloud_term {
+    -webkit-transition: 200ms linear;
+    -ms-transition: 200ms linear;
+    -moz-transition: 200ms linear;
+}
+.cloud_term:hover {
+    color: black !important;
+    text-decoration: none !important;
+}
+.more_context {
+    font-weight: 300 !important;
+    float: right;
+    margin-top: -.45em;
+    margin-right: -1px;
+}
+.citation {
+    padding-top: 5px;
+    margin-top: -7px;
+    height: 21px;
+}
+.cite_gradient {
+    background-color: #F8F8F8; /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, #F8F8F8, white); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, #F8F8F8, white); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, #F8F8F8, white); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, #F8F8F8, white); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, #F8F8F8, white); /* Standard syntax; must be last */
+}
+.collocate {
+    color:#1E90FF;
+    font-weight:400;
+}
+
+
+/*Tables*/
+.table_row {
+    height: 50px !important;
+}
+.first_column {
+    width: 175px;
+}
+.second_column {
+    width: 210px;
+}
+.philologic_table {
+    border-collapse:collapse;
+    width:auto;
+}
+.table_header {
+    background-color: #ECECEC;
+    border-style:solid;
+    border-width:1px;
+    border-color: LightGray;
+}
+.table_column {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 25%;
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-style:solid;
+    border-width:1px;
+    border-color: LightGray;
+    background-color: #FAFAFA;
+}
+
+
+/*All the sidebar classes*/
+.hide_frequency {
+    font-family: 'Droid Sans Mono', sans-serif !important;
+    font-size: 130%;
+    float: right;
+    color: Gray;
+}
+.hide_frequency:hover {
+    color: Black;
+    cursor: pointer;
+}
+.sidebar_display {
+    float: right;
+    min-width: 200px;
+    max-width: 400px;
+}
+.sidebar_display .freq_sidebar_status {
+	margin: 0em 0em 0.5em 0em;
+}
+.frequency_container {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ECECEC;
+    padding-top: 10px;
+    background-color: #FAFAFA;
+    display: none;
+}
+.frequency_table {
+    padding: 0px 5px 10px 10px;
+    line-height: 250%;
+    /*overflow-y: scroll;*/
+}
+.freq_sidebar_text {
+    display: inline-block !important;
+    max-width: 320px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/*Search form*/
+.form_body {
+    margin-left: -420px;
+    margin-top: -20px;
+    left: 50%;
+    width: 840px;
+    position: absolute;
+    display: none;
+    z-index: 90;
+    background-color: #FAFAFA;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #ECECEC;
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: #ECECEC;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #ECECEC;
+    box-shadow: 0px 9px 15px -5px #C8C8C8;
+    color: #555 !important;
+}
+.search_elements {
+    margin-top: 20px;
+    padding-left: 30px;
+    border-top: solid;
+    border-top-width: 1px;
+    border-top-color: #ECECEC;
+    float:left;
+}
+.search_box {
+    width: 250px;
+}
+.show_search_form {
+    font-size: 100%;
+    color: #800000;
+    font-weight: 600;
+    width: inherit;
+    text-decoration: none !important;
+}
+.report {
+    width: auto;
+    max-width: 960px;
+    display: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.hide_search_form {
+    float:right;
+    margin-top:-30px;
+    font-weight: 400;
+}
+.initial_form {
+    margin-left: 5px;
+}
+.search_field {
+    font-weight: 400;
+}
+.more_options {
+    float: right;
+    padding-right: 10px;
+}
+.search_explain {
+    margin-left: 420px;
+	width: 399px;
+	margin-top: 20px;
+	padding-top:10px;
+	padding-left: 10px;
+	text-align: justify;
+    font-family: inherit !important;
+	padding-right: 10px;
+	border-top: solid;
+    border-top-width: 1px;
+    border-top-color: #ECECEC;
+	position: absolute;
+}
+.explain_conc, .explain_relev, .explain_freq, .explain_colloc, .explain_time, .explain_kwic {
+    display: none;
+    margin-left: 50px;
+}
+.conc_question, .kwic_question, .relev_question, .colloc_question, .time_question, .freq_question {
+    margin-left: 50px;
+}
+
+
+
+/*Document viewing styles*/
+.title {
+    font-size: 140%;
+    padding-bottom: 20px;
+}
+.table_of_contents {
+    border-top: solid 1px #ECECEC;
+    padding-top: 8px;
+    padding-left: 10px;
+    line-height: 170%;
+}
+#toc_container {
+    overflow-y: auto;
+    background: white;
+    margin-top: 20px;
+}
+.page_number, obj_nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.current_page {
+    font-size: 105% !important;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.prev_page, .fake_prev_page, .prev_obj {
+    font-size: 500%;
+    color: #D8D8D8  !important;
+    cursor: pointer;
+    display:inline-block;
+}
+.prev_page:hover, .next_page:hover, .fake_prev_page:hover, .fake_next_page:hover, .prev_obj:hover, .next_obj:hover {
+    text-decoration: none !important;
+    color: #A8A8A8 !important;
+}
+.next_page, .fake_next_page, .next_obj {
+    font-size: 500%;
+    color: #D8D8D8  !important;
+    cursor: pointer;
+}
+#next_and_read {
+    margin-top: 30px;
+    top: 0;
+}
+#prev_and_toc {
+    margin-top: 30px;
+}
+.book_page {
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    width: 600px;
+    background-color: #FAFAFA !important;
+    box-shadow: 0px 0px 15px #888888;
+    line-height: 140% !important;
+    text-align: justify;
+    font-size: 105%;
+    min-height: 650px;
+    z-index: 100;
+}
+.obj_text {
+    vertical-align:middle;
+}
+.next_obj_wrapper, .prev_obj_wrapper, .next_page_wrapper, .prev_page_wrapper {
+    position: absolute;
+}
+.fixed_sidebar {
+    position: fixed;
+    top: 0;
+}
+.read_button {
+    margin-top: -40px;
+    margin-left: 50px;
+}
+.t_o_c_button {
+    display: inline-block;
+    margin-top: -40px;
+    padding-right: 10px;
+}
+
+
+/*jQueryUI styling*/
+.ui-button,  .ui-button-text, .ui-button, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {  
+    font-size: inherit !important;
+    font-family: inherit !important;
+}
+.ui-widget {
+    font-size: inherit !important;
+    font-family: inherit !important; 
+}
+
+ul.ui-autocomplete.ui-menu {  
+    font-size: inherit !important;
+    font-family: inherit !important;
+}
+.ui-tooltip {
+    font-size: 12px !important;
+    font-family: inherit !important;
+}
+.ui-progressbar {
+    height: 1em;
+    position: relative;
+}
+.progress-label {
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+.ui-progressbar-value {
+    font-size: 70% !important;
+    text-align: center;
+}
+.ui-autocomplete {
+    max-height: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-top, .ui-corner-left, .ui-corner-right {
+    border-radius: 0px !important;
+}
+
+
+/*Pages links*/
+.more {
+    font-size: 130%;
+    margin-left: auto;
+    margin-right: auto;
+    width:8%;
+    padding-top: 10px;
+}
+.more .previous {
+    float:left;
+}
+.more .next {
+    float: right;
+}
+
+
+/*Random stuff to be organized*/
+.bibliographic_results {
+    list-style-type: none;
+    border-top: solid 1px #ECECEC;
+}
+.description {
+    font-size: 140%;
+}
+.highlight {
+        color: #EF4500;
+        font-weight: 400;
+}
+
+.separation {
+        width:40%;
+        text-align:left;
+        margin-left:20px;
+        color: #000000;
+        background-color: #000000;
+        height: 1px;
+}
+.bibliography {
+        padding-bottom: 10px;
+}
+.loading {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.current_results_page {
+    font-size: 170%;
+}
+.t_o_c_title, .object_title {
+    font-size: 140%;
+    line-height: 120%;
+    padding-bottom: 8px;
+}
+
+
+/*Contextual menu on selection*/
+.highlight_options {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    background-color: #FAFAFA;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-width: 1px;
+    line-height: 170%;
+    box-shadow: 5px 9px 15px -5px #888888;
+    padding-bottom: 5px;
+}
+.selected_tag {
+    padding: 5px 15px 5px 15px;
+    font-size: 80%;
+    font-weight: 400 !important;
+    color: black !important;
+}
+.selected_tag:hover {
+    text-decoration: none !important;
+    background: #E8E8E8;
+}
+.selected_word {
+    padding: 10px 15px 5px 15px;
+    font-weight: 700;
+}
+.context_table {
+    border-collapse:collapse;
+    border-color: #CCCCCC;
+}
+
+
+
+
+/* Ugly looking workaround while waiting for next release of jQueryUI with selectmenu*/
+label.custom-select {
+    position: relative;
+    display: inline-block;
+}
+.custom-select select {
+    display: inline-block;
+    padding: 2px 1px 1px 3px;
+    margin: 0;
+    font: inherit !important;
+    outline:none; /* remove focus ring from Webkit */
+    line-height: 1.8;
+    background: #F8F8F8;
+    color:#555555;
+    border:solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    height: 28px;
+    width: 210px;
+}
+.custom-select:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 60%;
+    line-height: 30px;
+    padding: 0 7px;
+    background: #efefee;
+    color: #555555;
+    pointer-events: none;
+}
+
+/* hack for inserted page links at top of object */
+b p.inserted-page {
+  display:inline;
+}
+
+.image_container {
+    position: absolute;
+    border: solid;
+    border-color: #BFBFBF;
+    border-width: 18px;
+    z-index: 101;
+    left: 25%;
+    box-shadow: 0px 0px 15px #888888;
+    margin-top: -10px;
+}
+.page_image_link {
+    color: #800000;
+    text-decoration: none;
+    font-weight: 700 !important;
+}
+.page_image_link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.close_page_image {
+    position: absolute;
+    margin-top: -16px;
+    z-index: 200;
+    left: 100%;
+}
+.close_page_image:hover {
+    cursor: pointer;
+}
+
+.return_to_colloc {
+    color: #800000;
+    text-decoration: none;
+    font-weight: 700 !important;
+    font-size: 140%;
+}
+.return_to_colloc:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.syntax_title {
+    font-size: 100%;
+}
+.syntax_title:hover {
+    text-decoration: underline;
+}
+#syntax_explain {
+    padding: 5px 5px 5px 5px;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-width: 1px;
+    line-height: 170%;
+    box-shadow: 5px 9px 15px -5px #888888;
+    color: black;
+}
